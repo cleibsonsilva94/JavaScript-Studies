@@ -529,84 +529,84 @@ o que facilita a organização das informações.
 */
 
 // Criação de dois objetos vazios
-var yoda = {}
-var cleibson = {}
+// var yoda = {}
+// var cleibson = {}
 
-/*
-Aqui estamos adicionando propriedades ao objeto yoda.
-Cada propriedade representa uma característica.
-*/
-yoda.name = 'Yoda'
-yoda.idade = 50
-yoda.jedy = true
-yoda.outro = 'O grande guerreiro'
+// /*
+// Aqui estamos adicionando propriedades ao objeto yoda.
+// Cada propriedade representa uma característica.
+// */
+// yoda.name = 'Yoda'
+// yoda.idade = 50
+// yoda.jedy = true
+// yoda.outro = 'O grande guerreiro'
 
-/*
-O mesmo conceito vale para o objeto cleibson.
-Note que os dados são diferentes, mas a estrutura é a mesma.
-*/
-cleibson.name = 'Cleibson Silva'
-cleibson.idade = 31
-cleibson.profissao = 'QA'
-cleibson.estado_civil = 'Solteiro'
+// /*
+// O mesmo conceito vale para o objeto cleibson.
+// Note que os dados são diferentes, mas a estrutura é a mesma.
+// */
+// cleibson.name = 'Cleibson Silva'
+// cleibson.idade = 31
+// cleibson.profissao = 'QA'
+// cleibson.estado_civil = 'Solteiro'
 
-// ======================================
-// OBJETOS - MODELAGEM TIPO JSON
-// ======================================
-/*
-Essa é outra forma de criar objetos em JavaScript, muito parecida com JSON.
-Uma vantagem é que podemos definir FUNÇÕES (métodos) dentro do próprio objeto.
-*/
+// // ======================================
+// // OBJETOS - MODELAGEM TIPO JSON
+// // ======================================
+// /*
+// Essa é outra forma de criar objetos em JavaScript, muito parecida com JSON.
+// Uma vantagem é que podemos definir FUNÇÕES (métodos) dentro do próprio objeto.
+// */
 
-var AlunoId01 = {
-  nome: "João",
-  idade: 30,
-  ativo: true,
-  anoDeConclusão: 'Em aberto',
-  curso: 'Engenharia',
+// var AlunoId01 = {
+//   nome: "João",
+//   idade: 30,
+//   ativo: true,
+//   anoDeConclusão: 'Em aberto',
+//   curso: 'Engenharia',
 
-  // Método do objeto
-  mostrar_idade: function () {
-    console.log(this.idade)
+//   // Método do objeto
+//   mostrarIdade: function () {
+//     console.log(this.idade)
 
-    /*
-    INTERPOLAÇÃO DE STRING:
-    Usa crase (`) e ${} para inserir variáveis dentro do texto
-    de forma mais legível.
-    */
-    console.log(`A idade do ${this.nome} é de ${this.idade}`)
-  }
-};
+//     /*
+//     INTERPOLAÇÃO DE STRING:
+//     Usa crase (`) e ${} para inserir variáveis dentro do texto
+//     de forma mais legível.
+//     */
+//     console.log(`A idade do ${this.nome} é de ${this.idade}`)
+//   }
+// };
 
-/*
-CONCATENAÇÃO x INTERPOLAÇÃO
+// /*
+// CONCATENAÇÃO x INTERPOLAÇÃO
 
-CONCATENAÇÃO:
-- Junta textos usando o operador +
-- Mais antiga e menos legível
-Exemplo:
-*/
-console.log("A idade do " + AlunoId01.nome + " é de " + AlunoId01.idade)
+// CONCATENAÇÃO:
+// - Junta textos usando o operador +
+// - Mais antiga e menos legível
+// Exemplo:
+// */
+// console.log("A idade do " + AlunoId01.nome + " é de " + AlunoId01.idade)
 
-/*
-INTERPOLAÇÃO:
-- Usa template strings (crase)
-- Código mais limpo e fácil de ler
-Exemplo:
-*/
-console.log(`A idade do ${AlunoId01.nome} é de ${AlunoId01.idade}`)
+// /*
+// INTERPOLAÇÃO:
+// - Usa template strings (crase)
+// - Código mais limpo e fácil de ler
+// Exemplo:
+// */
+// console.log(`A idade do ${AlunoId01.nome} é de ${AlunoId01.idade}`)
 
-/*
-Uso dos objetos:
-- Uma única variável (AlunoId01) guarda vários dados
-- Dados e comportamentos (funções) ficam juntos
-- Facilita organização, manutenção e testes
-*/
+// /*
+// Uso dos objetos:
+// - Uma única variável (AlunoId01) guarda vários dados
+// - Dados e comportamentos (funções) ficam juntos
+// - Facilita organização, manutenção e testes
+// */
 
-console.log(AlunoId01)
+// console.log(AlunoId01)
 
-// Invocando o método do objeto
-AlunoId01.mostrarIdade()
+// // Invocando o método do objeto
+// AlunoId01.mostrarIdade()
 
 /*
 Resumo:
@@ -615,3 +615,38 @@ Resumo:
 - Interpolação: insere variáveis direto no texto com ${}
 - Interpolação é a forma mais recomendada atualmente
 */
+
+
+// // ====================================
+// // CONSTANTES — Variáveis imutáveis
+// // ====================================
+
+// /*
+// Constantes (const) são variáveis cujo valor NÃO pode ser alterado
+// após a sua declaração.
+
+// São muito utilizadas para:
+// - Massas de teste fixas
+// - Configurações
+// - Valores que não devem mudar durante a execução do sistema
+
+// Isso ajuda a evitar erros acidentais e facilita a manutenção.
+// */
+
+// const nome = 'Cleibson'
+// console.log(nome)
+
+// /*
+// Tentativa de reatribuição:
+// - Gera ERRO
+// - const não permite alteração de valor
+// */
+// nome = 'Cleibson Lima' // Erro: Assignment to constant variable
+// console.log(nome)
+
+// /*
+// Resumo:
+// - const cria uma variável imutável
+// - Obrigatório atribuir valor na declaração
+// - Ideal para dados que NÃO devem mudar
+// */
