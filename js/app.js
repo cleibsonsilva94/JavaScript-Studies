@@ -358,6 +358,7 @@
 // // ======================================================================
 // // Comentário explicativo – Estrutura IF
 // // ======================================================================
+
 // // O "if" é uma estrutura de controle de fluxo utilizada para tomada
 // // de decisão baseada em condições.
 // // Ele permite que o código execute caminhos diferentes de acordo com
@@ -549,17 +550,68 @@ cleibson.idade = 31
 cleibson.profissao = 'QA'
 cleibson.estado_civil = 'Solteiro'
 
+// ======================================
+// OBJETOS - MODELAGEM TIPO JSON
+// ======================================
+/*
+Essa é outra forma de criar objetos em JavaScript, muito parecida com JSON.
+Uma vantagem é que podemos definir FUNÇÕES (métodos) dentro do próprio objeto.
+*/
+
+var AlunoId01 = {
+  nome: "João",
+  idade: 30,
+  ativo: true,
+  anoDeConclusão: 'Em aberto',
+  curso: 'Engenharia',
+
+  // Método do objeto
+  mostrar_idade: function () {
+    console.log(this.idade)
+
+    /*
+    INTERPOLAÇÃO DE STRING:
+    Usa crase (`) e ${} para inserir variáveis dentro do texto
+    de forma mais legível.
+    */
+    console.log(`A idade do ${this.nome} é de ${this.idade}`)
+  }
+};
+
+/*
+CONCATENAÇÃO x INTERPOLAÇÃO
+
+CONCATENAÇÃO:
+- Junta textos usando o operador +
+- Mais antiga e menos legível
+Exemplo:
+*/
+console.log("A idade do " + AlunoId01.nome + " é de " + AlunoId01.idade)
+
+/*
+INTERPOLAÇÃO:
+- Usa template strings (crase)
+- Código mais limpo e fácil de ler
+Exemplo:
+*/
+console.log(`A idade do ${AlunoId01.nome} é de ${AlunoId01.idade}`)
+
 /*
 Uso dos objetos:
-- Cada variável (yoda, cleibson) guarda um conjunto de dados
-- Facilita a leitura, manutenção e organização do código
+- Uma única variável (AlunoId01) guarda vários dados
+- Dados e comportamentos (funções) ficam juntos
+- Facilita organização, manutenção e testes
 */
-console.log(yoda)
-console.log(cleibson)
+
+console.log(AlunoId01)
+
+// Invocando o método do objeto
+AlunoId01.mostrarIdade()
 
 /*
 Resumo:
-- Variável comum: guarda um único valor
-- Objeto: guarda vários valores relacionados
-- Objetos representam entidades do sistema (pessoa, usuário, produto, etc.)
+- Objeto: conjunto de dados + comportamentos
+- Concatenação: junta strings com +
+- Interpolação: insere variáveis direto no texto com ${}
+- Interpolação é a forma mais recomendada atualmente
 */
