@@ -27,6 +27,9 @@ Este projeto tem como objetivo demonstrar conceitos fundamentais de desenvolvime
 - Uso do objeto `data` como estado da aplicação
 - Definição de comportamentos com `methods`
 
+📘 Saiba mais sobre esses conceitos aqui:  
+   [js/Apprenticeship/vueMethods.md](js/Apprenticeship/vueMethods.md)
+
 ---
 
 ## 🔧 Técnicas Utilizadas
