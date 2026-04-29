@@ -87,10 +87,14 @@ const App = new Vue({
             const list = this.characters
 
             const result = list.filter(item => {
-                return item.nome === this.searcName
+                return item.nome === this.searchName
             })
-            
-            this.characters = result
+
+            if (result.length <= 0) {
+                alert('Nenhum registro encontrado.')
+            } else {
+                this.characters = result
+            }
         }
     }
 })
