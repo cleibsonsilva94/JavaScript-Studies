@@ -60,8 +60,8 @@ const LIST = [
 
     {
     id: 7,
-    nome: 'R2D2',
-    avatar: 'images/R2D2.png'
+    nome: 'Vader',
+    avatar: 'images/vader.png'
     },
 
     {
@@ -75,9 +75,12 @@ const App = new Vue({
     el: '#app',
     data: {
         title: 'Star Wars Logo',
-        name:  'Cleibson Silva',
-        Idade: 'Cleibson Silva',
+        name: 'Cleibson Silva',
         characters: LIST
+    },
+    methods: {
+        like(userName) {
+        alert(`O personagem ${userName} recebeu um like!`)
+        }
     }
-
 })
