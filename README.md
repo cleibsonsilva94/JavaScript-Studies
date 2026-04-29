@@ -74,4 +74,3 @@ Este projeto demonstra como o Vue.js utiliza o poder do JavaScript para:
 - Facilitar a criação de interfaces reativas
 
 Ideal para estudos iniciais sobre **frameworks JavaScript**, **reatividade** e **desenvolvimento front-end moderno**.
-``
