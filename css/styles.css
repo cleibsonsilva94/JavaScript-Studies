@@ -17,15 +17,6 @@ body {
 h1 {
    
 }
-
-.top {
-   padding: 25px;
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   align-items: center;
-   text-align: left;
-}
-
 .top h1 {
    font-size: 2em;
    margin: 0;
